@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+
+<< Projeto WEB >>
+
+- NATAN DE CAMARGO RODRIGUES
+- PEDRO HENRIQUE FRAGA ARANTES
+- RAFAEL PEREIRA ELIAS
+- RUY SILVA MENEZES
+- BRUNO SOUSA
+- JOÃO VITOR RICHARD CARLOS
+	
+-->
+<html>
+	<head>
+		<title>Easy Vacation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+                <link rel="stylesheet" href="assets/css/bootstrap.css" />
+        <style>
+			.form-control:invalid {
+				border: 1px solid #cc0000;
+			}
+
+			.navbar {
+				margin: 0;
+			}
+    	</style>
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Preencha os campos abaixo com as informações solicitadas.</strong></a>
+								</header>
+                      <div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h2 class="panel-title">Informações gerais</h2>
+						</div>
+			
+						<div class="panel-body">
+							<img src="images/productF.png" alt="Casa no Guarujá" class="img-thumbnail img-responsive">
+							<dl>
+								<dt>Locação:</dt>
+								<dd>Casa no Guarujá</dd>
+								
+								<dt>Preço da diária:</dt>
+								<dd>230,00</dd>
+								
+								<dt>Quantidade de pessoas:</dt>
+								<dd>8</dd>
+                                                                
+                                                                <dt>Quantidade de dias:</dt>
+								<dd>10</dd>
+                                                                
+                                                                <dt>Valor por pessoa:</dt>
+								<dd>287,50</dd>
+                                                                
+                                                                <dt>Valor total da locação:</dt>
+								<dd>2,300</dd>
+
+							</dl>
+						</div>
+					</div>
+				</div>
+
+				<form class="col-sm-8">
+					<div class="row">
+						<fieldset class="col-sm-6">
+							<legend>Dados pessoais</legend>
+
+							<div class="form-group">
+								<label for="nome">Nome completo</label>
+								<input type="text" class="form-control" id="nome" name="nome" autofocus required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com">
+							</div>
+
+							<div class="form-group">
+								<label for="cpf">CPF</label>
+								<input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+							</div>
+
+							<div class="checkbox">
+								<label>
+									<input type="checkbox" value="sim" name="spam" checked>
+									Quero receber novidades da Easy Vacation
+								</label>
+							</div>
+						</fieldset>
+
+						<fieldset class="col-sm-6">
+							<legend>Cartão de Crédito</legend>
+
+							<div class="form-group">
+								<label for="numero-cartao">Número - CVV</label>
+								<input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+							</div>
+
+							<div class="form-group">
+								<label for="bandeira-cartao">Bandeira</label>
+								<select name="bandeira-cartao" id="bandeira-cartao" class="form-control">
+									<option value="master">MasterCard</option>
+									<option value="visa">VISA</option>
+									<option value="amex">American Express</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="validade-cartao">Validade</label>
+								<input type="month" class="form-control" id="validade-cartao" name="validade-cartao">
+							</div>
+						</fieldset>
+					</div>
+
+					<button type="submit" class="btn btn-primary pull-right">
+						Confirmar reserva
+					</button>
+				</form>
+			</div>
+		</div>
+						</div>
+					</div>
+
+	           <!-- Script menuOculto -->
+				<anside id="menuOculto" class="menuOculto">
+                                <a href="javascript: void(0)" class="btnFechar" onclick="fecharNav()">&times;</a>
+
+				<!-- Sidebar -->
+                                
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Escolha seu destino" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Página Principal</a></li>
+                                                                                <li><a href="#">Hospedagem</a></li>
+                                                                                <li><a href="#">Painel anfitrião</a></li>
+										<li><a href="#">Minhas locações</a></li>
+										<li><a href="#">Melhores casas</a></li>
+										<li><a href="#">Parceiros</a></li>
+										<li><a href="about.html">Sobre</a></li>
+										<li><a href="#">Atendimento</a></li>
+									</ul>
+								</nav>
+                                                        </anside>
+                                                        <section id="principal">
+                                                        <span style="font-size:32px;cursor:pointer" onclick="abrirNav()">&#9776;</span>
+			                                </div>
+
+		<!-- Scripts -->
+
+			<script type="text/javascript" src="assets/js/script.js"></script>
+                        <script src="assets/js/jquery.js"></script>
+		        <script src="assets/js/bootstrap.js"></script>
+	</body>
+</html>
