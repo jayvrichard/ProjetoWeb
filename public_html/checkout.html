@@ -53,30 +53,31 @@
                                     <div class="panel-body">
                                         <img src="images/productF.png" alt="Casa no Guarujá" class="img-thumbnail img-responsive">
                                         <dl>
-                                            <dt>Locação:</dt>
-                                            <dd>Casa no Guarujá</dd>
+                                            
+                                            <dt><br>Nome:</dt>
+                                            <dd>Casa beira mar no guarujá</dd>
 
                                             <dt>Preço da diária:</dt>
-                                            <dd>230,00</dd>
+                                            <dd>R$ 1000,00</dd>
 
                                             <dt>Quantidade de pessoas:</dt>
-                                            <dd>8</dd>
+                                            <dd>8 pessoas no total</dd>
 
                                             <dt>Quantidade de dias:</dt>
-                                            <dd>10</dd>
+                                            <dd>5 dias completo</dd>
 
                                             <dt>Valor por pessoa:</dt>
-                                            <dd>287,50</dd>
+                                            <dd>R$ 625,50</dd>
 
                                             <dt>Valor total da locação:</dt>
-                                            <dd>2,300</dd>
+                                            <dd>R$ 5,000</dd>
 
                                         </dl>
                                     </div>
                                 </div>
                             </div>
 
-                            <form class="col-sm-8">
+                            <form name="formCadastro" class="col-sm-8">
                                 <div class="row">
                                     <fieldset class="col-sm-6">
                                         <legend>Dados pessoais</legend>
@@ -129,12 +130,24 @@
                                 </div>
 
                                 <script>
-                                    function cadastro() {
-                                        alert('Reserva efetuada com sucesso!');
-                                    }
+                                    function validarCadastro() {
+                                        var cadastroN = document.forms["formCadastro"]["nome"].value;
+                                        var cadastroE = document.forms["formCadastro"]["email"].value;
+                                        var cadastroC = document.forms["formCadastro"]["cpf"].value;
+                                        
+                                        if (cadastroN =="" || cadastroE =="" || cadastroC =="") {
+                                          alert("Falta preencher algum campo!");
+                                                  return false;
+                                        }
+                                       else{
+                                            alert("Reserva efetuada com sucesso!");
+                                            return true;
+                                         }
+                                       } 
+                                    
                                 </script>
 
-                                <button type="submit" class="btn btn-primary pull-right" onclick="cadastro()">
+                                <button type="submit" class="btn btn-primary pull-right" onclick="validarCadastro()">
                                     Confirmar reserva
                                 </button>
                             </form>
