@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Mirror Fashion</title>
+
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width">
+   
+    	<link rel="stylesheet" href="css/reset.css">
+    	<link rel="stylesheet" href="css/estilos.css">
+    	<link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)" />
+    	<link rel="stylesheet" href="css/produto.css">
+  	</head>
+	
+	<body>
+		<header class="container">
+			<h1>
+				<img src="img/logo2.png" alt="Vacation">
+			</h1>
+			
+			<p class="sacola">
+				Nenhum item na sacola de compras
+			</p>
+
+			<nav class="menu-opcoes">
+				<ul>
+					<li><a href="#">Sua Conta</a></li>
+					<li><a href="#">Lista de Desejos</a></li>
+					<li><a href="#">Cartão Fidelidade</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="#">Ajuda</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="container">
+			<div class="produto">
+				<h1>Casa no Guaruja</h1>
+                                <p>por apenas R$ 230,00(diaria)</p>
+
+				<form action="checkout.html">
+			    	<fieldset class="cores">
+			        	<legend>Escolha a cor:</legend>
+
+			          	<input type="radio" name="cor" value="verde" id="verde" checked>
+			          	<label for="verde">
+			            	<img src="img/produtos/aaa2.png" alt="verde">
+			         	</label>
+			          
+			          	<input type="radio" name="cor" value="rosa" id="rosa">
+			          	<label for="rosa">
+			            	<img src="img/produtos/ddd2.png" alt="rosa">
+			          	</label>
+			          
+			          	<input type="radio" name="cor" value="azul" id="azul">
+			          	<label for="azul">
+			            	<img src="img/produtos/aaa2.png" alt="azul">
+			          	</label>
+			      	</fieldset>
+
+			      	<fieldset class="tamanhos">
+						<legend>Quantidade de pessoas:</legend>
+
+						<input type="range" min="1" max="15" value="5" step="1" name="tamanho" id="tamanho" oninput="output.value = this.value">
+					 	<output name="output" for="tamanho" value="15">5
+				</fieldset>                                
+			      	<input type="submit" class="comprar" value="Reservar">
+			  	</form>
+			</div>
+                    <div class="detalhes">
+                    <h2>Detalhes da locação</h2>
+                    <p>Curta os seus dias de férias em uma das casas mais
+                       bonitas do Guaruja. Leve sua familia e amigos para curtir
+                       uma das mais belas praias do litoral sul de São Paulo.
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Detalhe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Metragem da casa</td>
+                                <td>284m²</td>
+                            </tr>
+                            <tr>
+                                <td>Quartos</td>
+                                <td>Contém 5</td>
+                            </tr>
+                            <tr>
+                                <td>Camas</td>
+                                <td>2 casal 5 solteiro</td>
+                            </tr>
+                            <tr>
+                                <td>Parte externa</td>
+                                <td>Piscina e quadra</td>
+                            </tr>
+                            <tr>
+                                <td>Praia</td>
+                                <td>250 metros</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+	</div>
+
+		<footer>
+			<div class="container">
+				<img src="img/logo-rodape.png" alt="Logo Mirror Fashion"/>
+
+				<ul class="social">
+					<li><a href="http://facebook.com/mirrorfashion">Facebook</a></li>
+					<li><a href="http://twitter.com/mirrorfashion">Twitter</a></li>
+					<li><a href="http://plus.google.com/mirrorfashion">Google+</a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
+</html>
